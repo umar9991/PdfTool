@@ -5,21 +5,18 @@ const HeroSection = () => {
     <section className="pt-20 sm:pt-24 pb-16 sm:pb-20 bg-gradient-to-b from-white via-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
             <span className="block">Every tool you need to</span>
             <span className="block text-red-600">work with PDFs</span>
             <span className="block">in one place</span>
           </h1>
           
-          {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-5xl mx-auto leading-relaxed mb-8 sm:mb-12">
             Every tool you need to use PDFs, at your fingertips. All are{' '}
             <span className="font-semibold text-red-600">100% FREE</span> and easy to use! 
             Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.
           </p>
 
-          {/* Feature Highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto mt-12">
             <div className="flex flex-col items-center p-4">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
@@ -52,7 +49,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
           <div className="mt-12">
             <a 
               href="#all-tools"
@@ -67,7 +63,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-red-100 rounded-full opacity-20"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-100 rounded-full opacity-20"></div>
