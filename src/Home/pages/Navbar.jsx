@@ -26,22 +26,22 @@ const Navbar = () => {
         ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/20' 
         : 'bg-white/80 backdrop-blur-sm shadow-md'
     }`}>
-      <div className="max-w-full mx-[100px] px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 sm:h-20">
           
           {/* Logo Section */}
           <div className="flex items-center space-x-3 group cursor-pointer">
             <div className="relative">
               <div className="p-2 bg-gradient-to-br from-red-500 to-red-600 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-                <FileText className="w-8 h-8 text-white" />
+                <FileText className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
               </div>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
             </div>
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-red-600 via-red-500 to-orange-500 bg-clip-text text-transparent">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-red-600 via-red-500 to-orange-500 bg-clip-text text-transparent">
                 Best PDF Tools
               </h1>
-              <p className="text-xs text-gray-500 -mt-1">Free & Secure</p>
+              <p className="text-[10px] sm:text-xs text-gray-500 -mt-1">Free & Secure</p>
             </div>
           </div>
 
@@ -59,19 +59,19 @@ const Navbar = () => {
                 >
                   <span>{item.name}</span>
                   {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
-                  
+
                   {/* Active indicator */}
                   {item.active && (
                     <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-red-600 rounded-full"></div>
                   )}
-                  
+
                   {/* Hover effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
                 </a>
 
                 {/* Dropdown for All Tools */}
                 {item.hasDropdown && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  <div className="absolute top-full left-0 mt-2 w-56 sm:w-64 bg-white/95 backdrop-blur-md rounded-xl shadow-xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                     <div className="p-4 space-y-2">
                       <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Popular Tools</div>
                       {['Merge PDF', 'Split PDF', 'Compress PDF', 'PDF to Word', 'Edit PDF', 'Protect PDF'].map((tool, idx) => (
@@ -97,13 +97,11 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="relative p-2 rounded-lg text-gray-700 hover:text-red-600 hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-red-500/20 transition-all duration-300"
             >
-              <div className="relative">
-                {isMenuOpen ? (
-                  <X className="h-6 w-6 transform rotate-90 transition-transform duration-300" />
-                ) : (
-                  <Menu className="h-6 w-6 transform rotate-0 transition-transform duration-300" />
-                )}
-              </div>
+              {isMenuOpen ? (
+                <X className="h-6 w-6 transform rotate-90 transition-transform duration-300" />
+              ) : (
+                <Menu className="h-6 w-6 transform rotate-0 transition-transform duration-300" />
+              )}
             </button>
           </div>
         </div>
@@ -111,10 +109,10 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
           isMenuOpen 
-            ? 'max-h-96 opacity-100 visible'      
+            ? 'max-h-[28rem] opacity-100 visible'      
             : 'max-h-0 opacity-0 invisible overflow-hidden'
         }`}>
-          <div className="px-4 py-4 space-y-2 bg-gradient-to-br from-gray-50 to-red-50/30 rounded-xl mt-4 border border-gray-200/50 backdrop-blur-sm">
+          <div className="px-4 py-4 space-y-2 bg-gradient-to-br from-gray-50 to-red-50/30 rounded-xl mt-3 border border-gray-200/50 backdrop-blur-sm">
             {navItems.map((item, index) => (
               <div key={index}>
                 <a
@@ -160,13 +158,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Background overlay for mobile menu */}
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/20 backdrop-blur-sm -z-10 md:hidden"
-          onClick={() => setIsMenuOpen(false)}
-        ></div>
-      )}
+     
     </nav>
   );
 };
