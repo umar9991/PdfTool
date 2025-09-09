@@ -75,35 +75,9 @@ const PDFToolsLanding = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-16 lg:py-24">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-6">
-            <FileText className="w-12 h-12 text-white" />
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-6">
-            Best PDF Tools
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-4">
-            The Ultimate Free Online PDF Tool for All Your Needs
-          </p>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            In today's digital world, the Portable Document Format (PDF) is the undisputed king of document sharing. 
-            We provide a comprehensive suite of powerful, <span className="font-semibold text-blue-600">free online PDF tools</span> designed 
-            to make your document management seamless, secure, and incredibly efficient.
-          </p>
-        </div>
-        <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 md:p-12 mb-16 shadow-xl border border-white/20">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-            Why a Powerful, All-in-One PDF Tool is Essential
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto text-center">
-            Managing digital documents is a core part of modern productivity. You might need to merge PDF files from different 
-            departments into a single report, or split PDF pages from a large manual. Perhaps you need to compress PDF files 
-            to meet email attachment size limits, or convert PDF to Word for easy editing. Our platform eliminates these 
-            roadblocks by offering every function in one convenient place.
-          </p>
-        </div>
+       
 
-        <div className="mb-20">
+        {/* <div className="mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Master Your Documents with Our Core PDF Tools
           </h2>
@@ -122,7 +96,7 @@ const PDFToolsLanding = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -172,7 +146,7 @@ const PDFToolsLanding = () => {
           </div>
         </div>
 
-        <div className="mb-20">
+        {/* <div className="mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Advanced Editing and Security
           </h2>
@@ -195,7 +169,7 @@ const PDFToolsLanding = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">

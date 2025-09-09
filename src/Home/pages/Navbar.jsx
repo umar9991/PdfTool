@@ -111,7 +111,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
           isMenuOpen 
-            ? 'max-h-96 opacity-100 visible' 
+            ? 'max-h-96 opacity-100 visible'      
             : 'max-h-0 opacity-0 invisible overflow-hidden'
         }`}>
           <div className="px-4 py-4 space-y-2 bg-gradient-to-br from-gray-50 to-red-50/30 rounded-xl mt-4 border border-gray-200/50 backdrop-blur-sm">

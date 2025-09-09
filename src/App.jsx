@@ -15,6 +15,7 @@ function App() {
      <Navbar/>
     {/* <Content/> */}
     {/* <HeroSection/> */}
+    <PDFToolsApp/>
     <PDFToolsLanding/>
      <Footer/>
      {/*
