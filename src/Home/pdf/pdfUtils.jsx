@@ -258,7 +258,7 @@ const PDFUtils = () => {
           </div>
         </div>
       ),
-      process: async (files, setDownloadLinks, setProcessingText, createDownloadLink, parsePageRanges, showError, compressionLevel) => {
+      process: async (files, setDownloadLinks, setProcessingText, createDownloadLink) => {
         if (!window.PDFLib) {
           throw new Error('PDF-lib library not loaded');
         }

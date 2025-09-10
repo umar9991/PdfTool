@@ -18,4 +18,6 @@ const ToolCard = ({ tool, onClick }) => {
       </div>
     );
   };
+
+export default ToolCard;
   
